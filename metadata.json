@@ -1,0 +1,8 @@
+{
+  "name": "NexusHub: The Universal Media Exchange",
+  "description": "A high-performance media sharing platform combining the features of YouTube, SoundCloud, and Google Drive with smart file detection and AI-enhanced features.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
