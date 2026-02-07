@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --nexus-red: #DC2626;
+  --nexus-bg: #0F0F0F;
+  --nexus-card: #1E1E1E;
+}
+
+body {
+  margin: 0;
+  background-color: var(--nexus-bg);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-futuristic {
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* Custom Audio Player Styling */
+.custom-audio::-webkit-media-controls-panel {
+  background-color: #272727;
+}
+.custom-audio::-webkit-media-controls-current-time-display,
+.custom-audio::-webkit-media-controls-time-remaining-display {
+  color: white;
+}
+
+@keyframes pulse-red {
+  0% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(220, 38, 38, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(220, 38, 38, 0); }
+}
+
+.animate-nexus-pulse {
+  animation: pulse-red 2s infinite;
+}
